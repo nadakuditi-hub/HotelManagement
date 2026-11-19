@@ -1,0 +1,24 @@
+HOTEL MANAGEMENT - UPDATE 2 (food menu, extras, coupons, housekeeping, staff, security, design)
+
+WHAT THIS ZIP CONTAINS
+  backend/src/main/java   -> replace your existing folder
+  frontend/src            -> replace your existing folder
+  frontend/index.html     -> replace your existing file
+  database/schema.sql, README.md -> reference only
+
+DO NOT COPY: application.properties (keeps your MySQL password), pom.xml, node_modules, target
+
+STEPS
+ 1. Stop the backend (red square in IntelliJ) and stop the frontend (Ctrl+C in the terminal).
+ 2. Open your project folder: hotel-management(claude)
+ 3. Delete the old "java" folder inside backend\src\main  and copy the new "java" folder from this zip there.
+    (Or copy the files over and choose "Replace" when asked.)
+ 4. Delete the old "src" folder inside frontend and copy the new "src" folder from this zip there.
+ 5. Copy index.html from this zip into the frontend folder (replace).
+ 6. Start the backend again (Run DemoApplication / HotelApplication in IntelliJ).
+    New tables and sample data (extras, coupons, staff, menu) are created automatically.
+ 7. In the frontend terminal:  npm run dev   (then open http://localhost:5173)
+
+LOGIN
+  Admin:    admin@hotel.com / admin123
+  Customer: register a new account (password needs 8+ characters with a letter and a number)

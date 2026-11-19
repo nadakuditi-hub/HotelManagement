@@ -1,0 +1,14 @@
+package com.hotel.repository;
+
+import com.hotel.model.FoodOrder;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface FoodOrderRepository extends JpaRepository<FoodOrder, Long> {
+    List<FoodOrder> findByBookingUserIdOrderByCreatedAtDesc(Long userId);
+
+    List<FoodOrder> findAllByOrderByCreatedAtDesc();
+
+    List<FoodOrder> findByBookingId(Long bookingId);
+}
